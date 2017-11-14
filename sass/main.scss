@@ -9,8 +9,9 @@ a:active, a:visited, a:link{
 
 header{
     padding-top: 55px;
-    background: url('../img/header-background.png') no-repeat;
     height: 950px;
+    background: url('../img/header-background.png') no-repeat; 
+    
 }
 
 .menuItem{
@@ -44,5 +45,27 @@ header{
         border:none;
         -webkit-box-shadow: 0 1px 1px 0 #000000;
         box-shadow: 0 1px 1px 0 #000000;
+    }
+}
+
+#about{
+    
+    background:#00b1b1;
+    
+    img{
+    width:100%;
+    }
+    
+    h1{
+        padding-top:180px;
+        font-weight: bold;
+        font-size:90px;
+        color:#fff;
+        
+    }
+    p{
+        font-weight:light;
+        font-size: 17px;
+        color:#fff;
     }
 }
