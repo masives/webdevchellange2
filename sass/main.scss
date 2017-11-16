@@ -6,7 +6,11 @@ a:active, a:visited, a:link{
     text-decoration: none;
     color: #000;
 }
-
+p{
+        font-size: 17px;
+        font-weight: 300;
+        color:#000;
+    }
 header{
     height: 950px;
     background: url('../img/header-background.png') no-repeat; 
@@ -38,10 +42,7 @@ header{
         font-size: 60px;
         font-weight: 900;
     }
-    p{
-        font-size: 17px;
-        font-weight: 300;
-    }
+    
     button{
         width: 200px;
         height: 55px;
@@ -139,8 +140,7 @@ header{
     } 
 }
 
-/*
-*/.galleryTextBox{
+.galleryTextBox{
     color:#000;
 }
 .galleryTextBox--title{
@@ -155,21 +155,38 @@ header{
 .gallery-image{
     padding: 8px
     
-}/*
- 
- 
-
-.gallery--bigPhoto{
-    height: 550px;
-    background-size: contain;
+} 
+.subscribe{
+    background-image: url('../img/subscribe-backgroud.png');
     background-repeat: no-repeat;
+    background-position: right;
 }
-.gallery--smallPhoto{
-    height: 260px;
+.subscribe--box{
+    padding: 150px 0;
 }
-.gallery--spacing{
-    height: 30px;
-    display: block;
-}*/
 
-/*gallery stop*/
+.subscribe--box--text{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subscribe--input{
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 15px;
+    padding: 15px;
+}
+.button{
+    width: 100%;
+    height: 55px;
+    background-color:#ff6033;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    border:none;
+    -webkit-box-shadow: 0 1px 1px 0 #000000;
+    box-shadow: 0 1px 1px 0 #000000;
+}
+.button--green{
+    background-color: #96b92c;
+}
