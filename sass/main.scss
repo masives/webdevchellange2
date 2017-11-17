@@ -2,15 +2,12 @@
    font-family: 'Raleway', sans-serif; 
 }
 
-a:active, a:visited, a:link{
-    text-decoration: none;
-    color: #000;
-}
+
 p{
-        font-size: 17px;
-        font-weight: 300;
-        color:#000;
-        text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    color:#000;
+    text-align: center;
     }
 header{
     height: 950px;
@@ -32,6 +29,10 @@ header{
     text-align: center;
     color: #000;
     text-transform: uppercase;
+    :active, :visited, :link{
+    text-decoration: none;
+    color: #000;
+    }
     :hover{
         border-top: solid 3px #ff6033;
     }
@@ -171,12 +172,7 @@ header{
     font-weight: bold;
 }
 
-.subscribe--input{
-    width: 100%;
-    border: 1px solid #000;
-    font-size: 15px;
-    padding: 15px;
-}
+
 .button{
     width: 100%;
     height: 55px;
@@ -194,6 +190,37 @@ header{
 }
 .button--green{
     background-color: #96b92c;
+}
+
+.input{
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 15px;
+    padding: 15px;
+}
+.input--blue{
+    background-color: #73d8d7;
+    color:#fff;
+    border:none;
+    margin-top: 15px;
+    
+}
+/*placeholder*/
+$placeholdercolor: #fff;
+.input--blue::-webkit-input-placeholder {
+    color: $placeholdercolor;
+}
+.input--blue:-moz-placeholder {
+    /* FF 4-18 */
+    color: $placeholdercolor;
+}
+.input--blue::-moz-placeholder {
+    /* FF 19+ */
+    color: $placeholdercolor;
+}
+.input--blue:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $placeholdercolor;
 }
 .blog{
     background: #b07cf7;
@@ -248,6 +275,20 @@ header{
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
+
+.contact{
+    background-image: url('../img/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+.description{
+    font-size: 17px;
+    font-weight: 300;
+    color:#000;
+    text-align: center;
+}
+
 .description--white{
     color:#fff;
 }
@@ -258,4 +299,37 @@ header{
 .description--small{
     font-size:13px;
     font-weight: lighter;
+}
+
+.description--contact{
+    font-weight:bold;
+    text-align: left;
+}
+
+.description--details{
+    font-size:20px;
+    text-align: left;
+}
+.footer{
+    background-color: #262626;
+}
+.footer-box{
+    padding: 30px 0;
+}
+.footer--logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color:#b9b9b9;
+}
+.footer-desc{
+    font-size:16px;
+    color:#b9b9b9;
+    :active, :visited, :link{
+        color:#a82944;
+        text-decoration: none;
+    }
+}
+.footer-link{
+    color: #a82944;
+    
 }
