@@ -15,6 +15,9 @@ header{
     background-size: cover;
     
 }
+.section{
+    padding:100px 0;
+}
 .header--logo{
     font-family: 'Pacifico', cursive;
     font-size: 50px;
@@ -25,8 +28,11 @@ header{
     position: fixed;
     width: 100%;
     background: #faf9fb;
-    padding-top: 55px;
     z-index: 9999;
+    @media(min-width:1000px){
+    height: 100px;
+    line-height: 100px;
+    }
 }
 .menuItem{
     font-weight: bold;
@@ -71,13 +77,6 @@ header{
     width:100%;
     }
     
-    h1{
-        padding-top:180px;
-        font-weight: bold;
-        font-size:90px;
-        color:#fff;
-        
-    }
     p{
         font-weight:light;
         font-size: 17px;
@@ -88,7 +87,7 @@ header{
 .services{
     background:#70bfff;
     .button-group{
-        margin: 150px 0;
+        
     }
     button{
         width: 100%;
@@ -114,7 +113,6 @@ header{
         background-repeat: no-repeat;
         background-position: center;
         background-size:contain;
-        margin-top: 130px;
         
         font-size: 90px;
         font-weight: bold;
@@ -122,8 +120,8 @@ header{
         color: #fff;
         text-shadow: 1px 1px 1px #000000;
         @media(max-width:1380px){
-            padding-top: 100px;
-            line-height: 89px;
+            font-size:70px;
+            line-height: 530px;
             text-align: center;
         }
     }

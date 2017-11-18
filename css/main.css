@@ -12,6 +12,9 @@ header {
   background: url("../img/header-background.png") no-repeat;
   background-size: cover; }
 
+.section {
+  padding: 100px 0; }
+
 .header--logo {
   font-family: 'Pacifico', cursive;
   font-size: 50px;
@@ -22,8 +25,11 @@ header {
   position: fixed;
   width: 100%;
   background: #faf9fb;
-  padding-top: 55px;
   z-index: 9999; }
+  @media (min-width: 1000px) {
+    .nav-bar {
+      height: 100px;
+      line-height: 100px; } }
 
 .menuItem {
   font-weight: bold;
@@ -57,11 +63,6 @@ header {
   background: #00b1b1; }
   .about img {
     width: 100%; }
-  .about h1 {
-    padding-top: 180px;
-    font-weight: bold;
-    font-size: 90px;
-    color: #fff; }
   .about p {
     font-weight: light;
     font-size: 17px;
@@ -69,8 +70,6 @@ header {
 
 .services {
   background: #70bfff; }
-  .services .button-group {
-    margin: 150px 0; }
   .services button {
     width: 100%;
     height: 100px;
@@ -91,7 +90,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 130px;
     font-size: 90px;
     font-weight: bold;
     line-height: 530px;
@@ -99,8 +97,8 @@ header {
     text-shadow: 1px 1px 1px #000000; }
     @media (max-width: 1380px) {
       .services h1 {
-        padding-top: 100px;
-        line-height: 89px;
+        font-size: 70px;
+        line-height: 530px;
         text-align: center; } }
   @media (max-width: 1340px) {
     .services span {
