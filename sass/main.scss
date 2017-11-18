@@ -15,8 +15,13 @@ header{
     background-size: cover;
     
 }
+.header--logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #262626;
+    text-align: left;
+}
 .nav-bar{
-    padding-top: 55px;
     position: fixed;
     width: 100%;
     background: #faf9fb;
@@ -58,7 +63,7 @@ header{
     }
 }
 
-#about{
+.about{
     
     background:#00b1b1;
     

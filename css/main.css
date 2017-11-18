@@ -12,8 +12,13 @@ header {
   background: url("../img/header-background.png") no-repeat;
   background-size: cover; }
 
+.header--logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: #262626;
+  text-align: left; }
+
 .nav-bar {
-  padding-top: 55px;
   position: fixed;
   width: 100%;
   background: #faf9fb;
@@ -48,16 +53,16 @@ header {
     -webkit-box-shadow: 0 1px 1px 0 #000000;
     box-shadow: 0 1px 1px 0 #000000; }
 
-#about {
+.about {
   background: #00b1b1; }
-  #about img {
+  .about img {
     width: 100%; }
-  #about h1 {
+  .about h1 {
     padding-top: 180px;
     font-weight: bold;
     font-size: 90px;
     color: #fff; }
-  #about p {
+  .about p {
     font-weight: light;
     font-size: 17px;
     color: #fff; }
