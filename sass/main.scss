@@ -13,6 +13,9 @@ header{
     height: 950px;
     background: url('../img/header-background.png') no-repeat; 
     background-size: cover;
+    @media(max-width:1000px){
+        height:700px;
+    }
     
 }
 .section{
@@ -23,6 +26,9 @@ header{
     font-size: 50px;
     color: #262626;
     text-align: left;
+    @media(max-width:1000px){
+        text-align: center;
+    }
 }
 .nav-bar{
     position: fixed;
@@ -41,7 +47,9 @@ header{
 }
 .nav-bar--hidden{
     top:-100px;
-    
+    @media(max-width:1000px){
+        top:-215px;
+    }
 }
 
 .nav-bar--shown{
@@ -66,23 +74,18 @@ header{
 }
 #home{
     padding-top: 215px;
+    @media(max-width:1000px){
+        padding-top: 400px;
+    }
    
     h1{
         font-size: 60px;
         font-weight: 900;
+        @media(max-width:1000px){
+        text-align: center;
+    }
     }
     
-    button{
-        width: 200px;
-        height: 55px;
-        background-color:#ff6033;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 20px;
-        border:none;
-        -webkit-box-shadow: 0 1px 1px 0 #000000;
-        box-shadow: 0 1px 1px 0 #000000;
-    }
 }
 
 .about{
@@ -184,11 +187,17 @@ header{
 }
 .subscribe--box{
     padding: 150px 0;
+    @media(max-width:1000px){
+        background-color: rgba(255,255,255, 0.3);
+        text-align:center;
+    }
 }
 
 .subscribe--box--text{
     font-size: 40px;
     font-weight: bold;
+    
+        
 }
 
 
@@ -202,6 +211,9 @@ header{
     border:none;
     -webkit-box-shadow: 0 1px 1px 0 #000000;
     box-shadow: 0 1px 1px 0 #000000;
+/*    @media(max-width:1000px){
+        width:
+    }*/
 }
 .button--red{
     background-color: #f72b3b;
@@ -216,12 +228,13 @@ header{
     border: 1px solid #000;
     font-size: 15px;
     padding: 15px;
+    
+    margin: 15px 0;
 }
 .input--blue{
     background-color: #73d8d7;
     color:#fff;
     border:none;
-    margin-top: 15px;
     
 }
 /*placeholder*/
@@ -262,6 +275,9 @@ $placeholdercolor: #fff;
     position: relative;
     background-size: cover;
     background-position: center;
+    @media(max-width:1000px){
+        margin: 30px 0;
+    }
 }
 .date{
     width: 60px;
@@ -322,12 +338,17 @@ $placeholdercolor: #fff;
 
 .description--contact{
     font-weight:bold;
-    text-align: left;
+    @media(min-width:1000px){
+        text-align: left;
+    }
+    
 }
 
 .description--details{
     font-size:20px;
-    text-align: left;
+    @media(min-width:1000px){
+        text-align: left;
+    }
 }
 .footer{
     background-color: #262626;

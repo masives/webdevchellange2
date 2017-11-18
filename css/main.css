@@ -11,6 +11,9 @@ header {
   height: 950px;
   background: url("../img/header-background.png") no-repeat;
   background-size: cover; }
+  @media (max-width: 1000px) {
+    header {
+      height: 700px; } }
 
 .section {
   padding: 100px 0; }
@@ -20,6 +23,9 @@ header {
   font-size: 50px;
   color: #262626;
   text-align: left; }
+  @media (max-width: 1000px) {
+    .header--logo {
+      text-align: center; } }
 
 .nav-bar {
   position: fixed;
@@ -38,6 +44,9 @@ header {
 
 .nav-bar--hidden {
   top: -100px; }
+  @media (max-width: 1000px) {
+    .nav-bar--hidden {
+      top: -215px; } }
 
 .nav-bar--shown {
   top: 0px; }
@@ -56,19 +65,15 @@ header {
 
 #home {
   padding-top: 215px; }
+  @media (max-width: 1000px) {
+    #home {
+      padding-top: 400px; } }
   #home h1 {
     font-size: 60px;
     font-weight: 900; }
-  #home button {
-    width: 200px;
-    height: 55px;
-    background-color: #ff6033;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    border: none;
-    -webkit-box-shadow: 0 1px 1px 0 #000000;
-    box-shadow: 0 1px 1px 0 #000000; }
+    @media (max-width: 1000px) {
+      #home h1 {
+        text-align: center; } }
 
 .about {
   background: #00b1b1; }
@@ -146,6 +151,10 @@ header {
 
 .subscribe--box {
   padding: 150px 0; }
+  @media (max-width: 1000px) {
+    .subscribe--box {
+      background-color: rgba(255, 255, 255, 0.3);
+      text-align: center; } }
 
 .subscribe--box--text {
   font-size: 40px;
@@ -160,7 +169,10 @@ header {
   font-size: 20px;
   border: none;
   -webkit-box-shadow: 0 1px 1px 0 #000000;
-  box-shadow: 0 1px 1px 0 #000000; }
+  box-shadow: 0 1px 1px 0 #000000;
+  /*    @media(max-width:1000px){
+          width:
+      }*/ }
 
 .button--red {
   background-color: #f72b3b;
@@ -173,13 +185,13 @@ header {
   width: 100%;
   border: 1px solid #000;
   font-size: 15px;
-  padding: 15px; }
+  padding: 15px;
+  margin: 15px 0; }
 
 .input--blue {
   background-color: #73d8d7;
   color: #fff;
-  border: none;
-  margin-top: 15px; }
+  border: none; }
 
 /*placeholder*/
 .input--blue::-webkit-input-placeholder {
@@ -215,6 +227,9 @@ header {
   position: relative;
   background-size: cover;
   background-position: center; }
+  @media (max-width: 1000px) {
+    .blog--entry {
+      margin: 30px 0; } }
 
 .date {
   width: 60px;
@@ -274,12 +289,16 @@ header {
   font-weight: lighter; }
 
 .description--contact {
-  font-weight: bold;
-  text-align: left; }
+  font-weight: bold; }
+  @media (min-width: 1000px) {
+    .description--contact {
+      text-align: left; } }
 
 .description--details {
-  font-size: 20px;
-  text-align: left; }
+  font-size: 20px; }
+  @media (min-width: 1000px) {
+    .description--details {
+      text-align: left; } }
 
 .footer {
   background-color: #262626; }
